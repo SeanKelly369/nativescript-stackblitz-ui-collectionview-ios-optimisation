@@ -1,34 +1,13 @@
 <ActionBar title="My App"> </ActionBar>
 
-<GridLayout>
-  <CollectionView [items]="items">
-    <ng-template let-item="item">
-      <GridLayout class="white-background">
-        <StackLayout [nsRouterLink]="['/item', item.id]">
-          <Label [text]="item.name" class="text-lg text-gray-500 p-4"></Label>
-        </StackLayout>
-      </GridLayout>
-    </ng-template>
-  </CollectionView>
-</GridLayout>
-
-<CollectionView [items]="items">
-  <ng-template let-item="item">
+<CollectionView backgroundColor="white" [items]="items">
+  <ng-container *ngFor="let item of items; let odd = odd; let i = index" >
     <StackLayout [nsRouterLink]="['/item', item.id]">
       <Label [text]="item.name" class="text-lg text-gray-500 p-4"></Label>
     </StackLayout>
-  </ng-template>
+  </ng-container>
 </CollectionView>
 
-<!-- <GridLayout>
-  <CollectionView [items]="items" itemTemplateSelector="templateSelector">
-    <ng-template let-item="item" let-odd="odd" let-i="index" templateSelector="templateSelector">
-      <GridLayout class="white-background">
-        <StackLayout [nsRouterLink]="['/item', item.id]">
-          <Label [text]="item.name" class="text-lg text-gray-500 p-4"></Label>
-        </StackLayout>
-      </GridLayout>
-    </ng-template>
-  </CollectionView>
-</GridLayout> -->
+
+
 

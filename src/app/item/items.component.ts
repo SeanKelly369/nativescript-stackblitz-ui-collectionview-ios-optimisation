@@ -13,6 +13,6 @@ export class ItemsComponent implements OnInit {
   constructor(private itemService: ItemService) {}
 
   ngOnInit(): void {
-    this.items = this.itemService.getItems()
+    this.items = this.itemService.getItems();
   }
 }

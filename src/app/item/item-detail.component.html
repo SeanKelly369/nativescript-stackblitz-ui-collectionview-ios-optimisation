@@ -5,5 +5,8 @@
     <Label class="text-3xl text-gray-400" [text]="item.id + '. '"></Label>
     <Label class="text-3xl" [text]="item.name"></Label>
   </FlexboxLayout>
-  <Label class="text-xl m-4" [text]="item.role"></Label>
+  <Label class="text-xl m-4" text="Position: {{item.position}}"></Label>
+  <Label class="text-xl m-4" text="Height: {{item.height}}m"></Label>
+  <Label class="text-xl m-4" text="Nationality: {{item.nationality}}"></Label>
+  <Label class="text-xl m-4" text="Date of Birth: {{item.dob}}"></Label>
 </FlexboxLayout>
