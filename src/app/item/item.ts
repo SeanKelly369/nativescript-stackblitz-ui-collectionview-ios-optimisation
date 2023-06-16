@@ -5,4 +5,7 @@ export interface Item {
   height: number
   nationality: string
   dob: string
+  appearances: number
+  goals: number
+  assists: number
 }
