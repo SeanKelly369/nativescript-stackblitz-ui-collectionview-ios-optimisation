@@ -1,12 +1,34 @@
 <ActionBar title="My App"> </ActionBar>
 
-<CollectionView backgroundColor="white" [items]="items">
-  <ng-container *ngFor="let item of items; let odd = odd; let i = index" >
-    <StackLayout [nsRouterLink]="['/item', item.id]">
-      <Label [text]="item.name" class="text-lg text-gray-500 p-4"></Label>
-    </StackLayout>
-  </ng-container>
-</CollectionView>
+<ScrollView #tableMainBody orientation="horizontal">
+  <CollectionView backgroundColor="white" [items]="items">
+    <ng-container *ngFor="let item of items; let odd = odd">
+      <GridLayout columns="150 200 60 90 90 60 60">
+        <StackLayout [nsRouterLink]="['/item', item.id]">
+          <Label [text]="item.name"></Label>
+        </StackLayout>
+        <StackLayout col="1">
+          <Label [text]="item.position"></Label>
+        </StackLayout>
+        <StackLayout col="2">
+          <Label [text]="item.height"></Label>
+        </StackLayout>
+        <StackLayout col="3">
+          <Label [text]="item.nationality"></Label>
+        </StackLayout>
+        <StackLayout col="4">
+          <Label [text]="item.dob"></Label>
+        </StackLayout>
+        <StackLayout col="5">
+          <Label [text]="item.goals"></Label>
+        </StackLayout>
+        <StackLayout col="6">
+          <Label [text]="item.assists"></Label>
+        </StackLayout>
+      </GridLayout>
+    </ng-container>
+  </CollectionView>
+</ScrollView>
 
 
 
