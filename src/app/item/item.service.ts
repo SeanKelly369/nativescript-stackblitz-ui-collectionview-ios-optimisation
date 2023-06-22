@@ -18,7 +18,7 @@ export class ItemService {
     { id: 10, name: 'Lucas Moura', position: 'Forward', height: 1.72, nationality: 'Brazilian', dob: '13/08/1992', appearances: 12, goals: 3, assists: 2 },
     { id: 11, name: 'Richarlison', position: 'Forward', height: 1.84, nationality: 'Brazilian', dob: '10/05/1997', appearances: 14, goals: 6, assists: 0 },
     { id: 12, name: 'Pape Matar Sarr', position: 'Midfielder', height: 1.85, nationality: 'Senegalese', dob: '14/09/2002', appearances: 0, goals: 0, assists: 0 },
-    { id: 13, name: 'Harry Kane', position: 'Forward', height: 1.88, nationality: 'English', dob: '28/07/1993', appearances: 38, goals: 21, assists: 13 },
+    { id: 13, name: 'Harry Kane', position: 'Forward', height: 1.88, nationality: 'English', dob: '28/07/1993', appearances: 38, goals: 22, assists: 13 },
     { id: 14, name: 'Rodrigo Bentancur', position: 'Midfield', height: 1.87, nationality: 'Uruguayian', dob: '25/06/1997', appearances: 26, goals: 3, assists: 4 },
     { id: 17, name: 'Emerson Royal', position: 'Right Back/Wing Back', height: 1.81, nationality: 'Brazilian', dob: '14/01/1999', appearances: 19, goals: 1, assists: 4 },
     { id: 18, name: 'Ben Davies', position: 'Defender', height: 1.81, nationality: 'Walsh', dob: '24/04/1993', appearances: 35, goals: 5, assists: 3 },
