@@ -10,7 +10,7 @@ export class ItemService {
     { id: 1, name: 'Hugo Lloris', position: 'Goalkeeper', height: 1.88, nationality: 'French', dob: '26/12/1986', appearances: 32, goals: 0, assists: 0  },
     { id: 3, name: 'Oliver Skipp', position: 'Midfielder', height: 1.75, nationality: 'English', dob: '16/09//2000', appearances: 12, goals: 1, assists: 1 },
     { id: 4, name: 'Dejan Kulusevski', position: 'Midfielder/Winger', height: 1.86, nationality: 'Swedish', dob:  '25/04/2000', appearances: 33, goals: 5, assists: 3},
-    { id: 5, name: 'Pierre-Emile Højbjerg', position: 'Midfielder', height: 1.87, nationality: 'Denish', dob: '05/08/1995', appearances: 36, goals: 2, assists: 5},
+    { id: 5, name: 'Pierre-Emile Højbjerg', position: 'Midfielder', height: 1.87, nationality: 'Danish', dob: '05/08/1995', appearances: 36, goals: 2, assists: 5},
     { id: 6, name: 'Pedro Porro', position: 'Right Back', height: 1.73, nationality: 'Spanish', dob: '13/09/1999', appearances: 8, goals: 1, assists: 0 },
     { id: 7, name: 'Davinson Sánchez', position: 'Defender', height: 1.87, nationality: 'Columbian', dob: '12/06/1996', appearances: 16, goals: 0, assists: 1 },
     { id: 8, name: 'Japhet Tanganga', position: 'Defender', height: 1.84, nationality: 'English', dob: '31/03/1999', appearances: 5, goals: 0, assists: 0 },
