@@ -6,7 +6,7 @@
 
   <GridLayout columns="60,*" rows="54, *">
 
-    <CollectionView row="0" col="0" [items]="items">
+    <!-- <CollectionView row="0" col="0" [items]="items"> -->
     <!-- <ng-template let-item let-odd="odd">
         <StackLayout class="cell-height">
             <StackLayout class="cell" [class.light-grey-cell]="odd" [class.white-cell]="!odd">
@@ -14,20 +14,20 @@
             </StackLayout>
         </StackLayout>
     </ng-template> -->
-</CollectionView>
+<!-- </CollectionView> -->
 
     <CollectionView row="0" col="1">
     </CollectionView>
 
     <!-- Ids -->
     <CollectionView row="1" col="0" backgroundColor="white" [items]="items">
-      <ng-template let-item let-odd="odd">
+      <ng-container *ngFor="let item of items; let odd = odd">
         <StackLayout class="cell-height">
             <StackLayout class="cell" [class.light-grey-cell]="odd" [class.white-cell]="!odd">
                 <Label class="jumbo-text" [text]="item.id"></Label>
             </StackLayout>
         </StackLayout>
-    </ng-template>
+      </ng-container>
     </CollectionView>
 
     <!-- Main table body -->
